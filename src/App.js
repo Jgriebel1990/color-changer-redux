@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
+import { connect } from 'react-redux';
 
 class App extends Component {
   render() {
     return (
      <div>
-       ô1111
-       <input type="color" name="" id=""/>
+       <h1>color picker</h1>
+       <section className='square'></section>
+       <input type="color"
+              name="" 
+              id=""
+              />
      </div>
     );
   }

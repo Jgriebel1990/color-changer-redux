@@ -1,5 +1,6 @@
 .square{
+  border: solid 3px black;
   height: 400px;
   width: 400px;
-  margin: 35rem;
 }
+
