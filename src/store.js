@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import colorReducer from './app'
+import colorReducer from './App'
 //types
 const CHANGE_COLOR = 'CHANGE_COLOR';
 //actions
