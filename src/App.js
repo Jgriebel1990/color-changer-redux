@@ -13,9 +13,10 @@ class App extends Component {
       <div>
         <h1>color picker</h1>
         <section className="square"
-                 style={{backgroundColor: this.props.color}} />
+                 style={{backgroundColor: this.props.color}}
+                  />
         <input type="color"
-               onChange={this.handleColorChange} />
+               onChange={s} />
       </div>
     );
   }
