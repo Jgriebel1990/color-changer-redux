@@ -10,7 +10,7 @@ export const changeColor = color => ({
 });
 //initial state
 const initialState = {
-  color: '#000000'
+  color: '#ffffff'
 };
 //reducer
 const reducer = (state = initialState, action) => {
