@@ -21,12 +21,16 @@ class App extends Component {
        <section className='square'
                 onClick={() => store.dispatch({type: 'CHANGE'})}></section>
        <input type="color"
-              name="" 
-              id=""
               />
      </div>
     );
   }
 }
+
+//mapStateToProps
+
+//mapDispatchToProps
+
+//wrap the app in connect
 
 export default App;
