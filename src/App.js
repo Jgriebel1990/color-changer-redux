@@ -16,7 +16,7 @@ class App extends Component {
                  style={{backgroundColor: this.props.color}}
                   />
         <input type="color"
-               onChange={s} />
+               onChange={(e) => this.props.changeColor(e.target.value)} />
       </div>
     );
   }
