@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { connect } from 'react-redux';
-import { changeColor } from './store'
+import { connect } from "react-redux";
+import { changeColor } from "./store";
 import "./App.css";
 
 //import connect from react-redux
@@ -12,26 +12,27 @@ class App extends Component {
     return (
       <div>
         <h1>color picker</h1>
-        <section 
-              className="square"/>
-        <input type="color" />
+        <section className="square"
+                 style={{backgroundColor: this.props.color}} />
+        <input type="color"
+               onChange={this.handleColorChange} />
       </div>
     );
   }
 }
 
 //mapStateToProps //this should be a function, but will work with null
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     color: state.color
-  }
+  };
 };
 //mapDispatchToProps
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {
-    colorChange: (color) => dispatch(changeColor(color))
-  }
-}
+    changeColor: color => dispatch(changeColor(color))
+  };
+};
 //wrap the app in connect
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
