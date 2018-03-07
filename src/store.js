@@ -3,7 +3,7 @@ import colorReducer from './App'
 //types
 const CHANGE_COLOR = 'CHANGE_COLOR';
 //actions
-const changeColor = (color) => ({
+export const changeColor = (color) => ({
     type: CHANGE_COLOR,
     payload: {
         value: color
